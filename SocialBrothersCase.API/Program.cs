@@ -1,3 +1,8 @@
+using System.Reflection;
+using SocialBrothersCase.AddressDomain;
+using SocialBrothersCase.Database;
+using SocialBrothersCase.Database.Repositories;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -6,6 +11,10 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddDbContext<AddressContext>();
+builder.Services.AddScoped<IRepository<Address>, GenericRepository<Address>>();
+builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
 
 var app = builder.Build();
 

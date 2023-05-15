@@ -2,6 +2,14 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialBrothersCase.API", "SocialBrothersCase.API\SocialBrothersCase.API.csproj", "{BE6C21B4-AB4A-4D56-BA61-712644959241}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialBrothersCase.AddressDomain", "SocialBrothersCase.AddressDomain\SocialBrothersCase.AddressDomain.csproj", "{49045742-1EB9-4671-8A6E-50D71DEAB8F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialBrothersCase.Database", "SocialBrothersCase.Database\SocialBrothersCase.Database.csproj", "{5EAD111C-B1A4-46D5-A893-AD11F8351721}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialBrothersCase.AddressApplication", "SocialBrothersCase.AddressApplication\SocialBrothersCase.AddressApplication.csproj", "{58978FF3-4238-4543-8856-CF7A40D44035}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialBrothersCase.GeoLocation", "SocialBrothersCase.GeoLocation\SocialBrothersCase.GeoLocation.csproj", "{88947671-4344-4EC3-A3FA-C938DDB4A158}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +20,21 @@ Global
 		{BE6C21B4-AB4A-4D56-BA61-712644959241}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE6C21B4-AB4A-4D56-BA61-712644959241}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE6C21B4-AB4A-4D56-BA61-712644959241}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49045742-1EB9-4671-8A6E-50D71DEAB8F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49045742-1EB9-4671-8A6E-50D71DEAB8F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49045742-1EB9-4671-8A6E-50D71DEAB8F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49045742-1EB9-4671-8A6E-50D71DEAB8F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EAD111C-B1A4-46D5-A893-AD11F8351721}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EAD111C-B1A4-46D5-A893-AD11F8351721}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EAD111C-B1A4-46D5-A893-AD11F8351721}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EAD111C-B1A4-46D5-A893-AD11F8351721}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58978FF3-4238-4543-8856-CF7A40D44035}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58978FF3-4238-4543-8856-CF7A40D44035}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58978FF3-4238-4543-8856-CF7A40D44035}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58978FF3-4238-4543-8856-CF7A40D44035}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88947671-4344-4EC3-A3FA-C938DDB4A158}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88947671-4344-4EC3-A3FA-C938DDB4A158}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88947671-4344-4EC3-A3FA-C938DDB4A158}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88947671-4344-4EC3-A3FA-C938DDB4A158}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
