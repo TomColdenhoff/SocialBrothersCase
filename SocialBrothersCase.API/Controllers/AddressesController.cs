@@ -61,5 +61,14 @@ namespace SocialBrothersCase.API.Controllers
 
             return deleted ? NoContent() : NotFound();
         }
+
+        [HttpGet("distance")]
+        public async Task<IActionResult> GetDistanceBetweenAddresses([FromQuery] Guid from, [FromQuery] Guid to)
+        {
+            var query = new GetDistanceQuery(from, to);
+            var distanceKm = await _mediator.Send(query);
+
+            return distanceKm == null ? NotFound() : Ok(new {DistanceKm = distanceKm});
+        }
     }
 }

@@ -1,7 +1,9 @@
 using System.Reflection;
+using SocialBrothersCase.AddressApplication;
 using SocialBrothersCase.AddressDomain;
 using SocialBrothersCase.Database;
 using SocialBrothersCase.Database.Repositories;
+using SocialBrothersCase.GeoLocation.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,7 +16,9 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<AddressContext>();
 builder.Services.AddScoped<IRepository<Address>, GenericRepository<Address>>();
+builder.Services.AddScoped<IAddressService, AddressService>();
 builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
+builder.Services.AddGeoLocation();
 
 var app = builder.Build();
 

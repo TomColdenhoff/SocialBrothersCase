@@ -25,4 +25,9 @@ public class Address
     
     [Required]
     public string Country { get; set; }
+
+    public override string ToString()
+    {
+        return $"{Street} {HouseNumber}{Addition}, {City}, {Country}";
+    }
 }

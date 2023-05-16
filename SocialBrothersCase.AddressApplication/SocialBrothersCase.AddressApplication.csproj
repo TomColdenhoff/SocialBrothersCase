@@ -13,6 +13,7 @@
     <ItemGroup>
       <ProjectReference Include="..\SocialBrothersCase.AddressDomain\SocialBrothersCase.AddressDomain.csproj" />
       <ProjectReference Include="..\SocialBrothersCase.Database\SocialBrothersCase.Database.csproj" />
+      <ProjectReference Include="..\SocialBrothersCase.GeoLocation\SocialBrothersCase.GeoLocation.csproj" />
     </ItemGroup>
 
 </Project>
