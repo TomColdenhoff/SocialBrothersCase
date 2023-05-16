@@ -20,5 +20,9 @@
       <ProjectReference Include="..\SocialBrothersCase.AddressApplication\SocialBrothersCase.AddressApplication.csproj" />
       <ProjectReference Include="..\SocialBrothersCase.Database\SocialBrothersCase.Database.csproj" />
     </ItemGroup>
-
+    
+    <PropertyGroup>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <NoWarn>$(NoWarn);1591</NoWarn>
+    </PropertyGroup>
 </Project>
