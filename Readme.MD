@@ -33,6 +33,6 @@ Ik heb de applicatie gebouwd met een CQRS-architectuur, waardoor ik mijn control
 
 ### Filteren
 Verder heb ik voor het filteren en het sorteren extensie methodes geschreven voor ```IQueryable```. 
-In deze methoden heb ik met behulp van reflectie een expressieboom kunnen bouwen waarmee ik dynamisch een Where- of OrderBy-methode kon genereren voor elk type object. 
+In deze methoden heb ik met behulp van reflectie een expressieboom kunnen bouwen waarmee ik dynamisch een ```Where```- of ```OrderBy```-methode kon genereren voor elk type object. 
 In de huidige versie ondersteun ik alleen properties van het type string, maar als ik ook andere typen wil ondersteunen, zou ik dit doen met behulp van een factory- en strategy patroon. 
 Hiermee kan ik op een schaalbare manier conversielogica schrijven voor meerdere typen.
